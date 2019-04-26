@@ -44,4 +44,4 @@ Change your original html to look like this:
 
 ---
 # Completed Challenge
-<img src="https://github.com/BryanNilsen/ParksAndWeather/blob/master/parks-weather-image.png" width="40%" alt="Parks and Weather">
+<img src="https://github.com/BryanNilsen/ParksAndWeather/blob/master/parks-weather-image.png" width="70%" alt="Parks and Weather">
