@@ -1,5 +1,4 @@
 # Parks and Weather
-<img src="https://github.com/BryanNilsen/ParksAndWeather/blob/master/parks-weather-image.png" width="40%" alt="Parks and Weather">
 
 This repository contains my original code solution to the following challenge:
 
@@ -22,8 +21,10 @@ Build an application using grunt to get data from the following API: https://raw
 ## Part Two
 
 1. For each of the national parks, use the latitude and longitude to get the weather.
-1. Use this API: https://darksky.net/dev.
-1. From the data coming back from the Dark Sky API, you are going to use `summary` listed under `currently`, `hourly` and `daily`.
+1. Use this API: ~~https://darksky.net/dev.~~
+1. I used the following API url to gather my weather data:
+https://blooming-mesa-53816.herokuapp.com/
+1. From the data coming back from the API, you are going to use `summary` listed under `currently`, `hourly` and `daily`.
 
 Change your original html to look like this:
 
@@ -40,15 +41,7 @@ Change your original html to look like this:
 </article>
 ```
 
-If you encounter CORS issues with the Dark Sky API, you can either get an extension for Chrome to work around it here:
-
-- https://chrome.google.com/webstore/detail/moesif-orign-cors-changer/digfbfaphojjndkpccljibejjbppifbc
-- OR you can add this to the front of you URL: `https://cors-anywhere.herokuapp.com/`
-
-Dark Sky
-The Dark Sky API allows you to request weather forecasts and historical weather data programmatically. It is the easiest, most advanced weather API on the web.
 
 ---
-
-I used the following API url to gather my weather data:
-https://blooming-mesa-53816.herokuapp.com/
+# Completed Challenge
+<img src="https://github.com/BryanNilsen/ParksAndWeather/blob/master/parks-weather-image.png" width="40%" alt="Parks and Weather">
