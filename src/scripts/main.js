@@ -2,6 +2,7 @@
 let parksOutput = document.getElementById("parksOutput");
 
 function getData() {
+  // get park data from API
   fetch(
     "https://raw.githubusercontent.com/nss-day-cohort-31/national-parks/master/database.json"
   )
@@ -9,7 +10,7 @@ function getData() {
     .then(data => {
       const allParks = data.parks;
       allParks.forEach(park => {
-        console.log(park);
+        // get weather data from API using park latitude and longitude
         fetch(
           `https://blooming-mesa-53816.herokuapp.com/${park.latitude},${
             park.longitude
@@ -17,9 +18,11 @@ function getData() {
         )
           .then(result => result.json())
           .then(weatherData => {
+            // add weather data as key/value pairs to park object
             park.currently = weatherData.currently.summary;
             park.hourly = weatherData.hourly.summary;
             park.daily = weatherData.daily.summary;
+            // run park object through DOM builder and post to DOM
             parksOutput.innerHTML += domBuilder(park);
           });
       });
@@ -27,12 +30,14 @@ function getData() {
 }
 
 function domBuilder(item) {
+  // control item card border based on visited value
   let articleClass = "";
   if (item.visited === true) {
     articleClass = "visited";
   } else {
     articleClass = "not_visited";
   }
+  // build HTML DOM element with item data
   let domElement = `
   <article class=${articleClass}>
   <h3>${item.name}</h3>
