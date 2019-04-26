@@ -1,4 +1,5 @@
 # Parks and Weather
+<img src="https://github.com/BryanNilsen/ParksAndWeather/blob/master/parks-weather-image.png" width="40%" alt="Parks and Weather">
 
 This repository contains my original code solution to the following challenge:
 
@@ -51,5 +52,3 @@ The Dark Sky API allows you to request weather forecasts and historical weather 
 
 I used the following API url to gather my weather data:
 https://blooming-mesa-53816.herokuapp.com/
-
-![Parks and Weather](https://raw.githubusercontent.com/BryanNilsen/ParksAndWeather/img/parks-weather-image.png)
