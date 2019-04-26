@@ -1,0 +1,31 @@
+body {
+  background: rgb(37, 172, 235);
+  font-family: 'Roboto',
+    sans-serif;
+}
+
+.page_title {
+  margin: auto;
+  font-size: 11vw;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
+}
+
+article {
+  background: white;
+  margin: 20px;
+  padding: 0px 10px
+}
+
+article li {
+  line-height: 1.5em;
+  margin-bottom: 1.3em;
+}
+
+.visited {
+  border: 4px dashed red
+}
+
+.not_visited {
+  border: 4px solid rgb(34, 150, 34)
+}
